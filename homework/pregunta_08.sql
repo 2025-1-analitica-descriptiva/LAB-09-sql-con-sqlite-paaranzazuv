@@ -40,4 +40,10 @@
 --  3  2019  550.998571
 --
 --  >>> Escriba su codigo a partir de este punto <<<
---
+SELECT 
+  STRFTIME('%Y', c23) AS "strftime('%Y', c23)",
+  AVG(c21) AS "avg(c21)"
+FROM tbl2
+GROUP BY STRFTIME('%Y', c23)
+ORDER BY STRFTIME('%Y', c23);
+
