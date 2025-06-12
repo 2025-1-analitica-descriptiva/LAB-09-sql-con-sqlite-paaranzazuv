@@ -45,7 +45,7 @@
 --  
 SELECT 
   K0, 
-  ROUND(AVG(c12),2) AS "avg(c12)"
+  CAST((CAST(AVG(c12) * 100 AS INTEGER)) AS REAL) / 100 AS "avg(c12)" 
 FROM tbl1
 WHERE c13 > 400
 GROUP BY K0;
