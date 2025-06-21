@@ -45,7 +45,7 @@
 --  
 SELECT
   K0,
-  CAST( printf('%.2f', AVG(c12)) AS REAL ) AS "avg(c12)"
+   CAST( printf('%.2f', AVG(c12)) AS REAL ) AS "avg(c12)"
 FROM tbl1
 WHERE c13 > 400
 GROUP BY K0;
